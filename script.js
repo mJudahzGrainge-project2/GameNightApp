@@ -20,24 +20,36 @@ gameApp.getGame = () => {
         })
         .then((data) => {
             gameApp.displayGames(data.games)
-            // console.log(data.games[1].name)
         });
 }
 
 const playerAmount = document.querySelector('select[name=players]').value;
 const timeLimit = document.querySelector('select[name=time]').value;
 
+const getRandomItem = (array) => {
+    const RandomIndex = Math.floor(Math.random() * array.length)
+    return array[RandomIndex];
+}
 gameApp.displayGames = (gameArray) => {
     const playerFilter = gameArray.filter(function (games) {
         return games.max_players >= playerAmount && games.max_playtime <= timeLimit;
     })
-    console.log(playerFilter);
+    const selectedGame = getRandomItem(playerFilter)
+    console.log(selectedGame.name)
+
+
+    const testDiv = document.querySelector('.test')
+    const gameName = document.createElement('h4')
+    const gameImg = document.createElement('img')
+    const gameDescription = document.createElement('p')
+    testDiv.append(gameName)
+    testDiv.append(gameImg)
+    testDiv.append(gameDescription)
+    gameName.innerHTML = `${selectedGame.name}`;
+    gameImg.setAttribute('src', selectedGame.image_url)
+    gameDescription.innerHTML = `${selectedGame.description}`
 };
 
-gameApp.getRandomItem = (array) => {
-    const RandomIndex = Math.floor(Math.random() * array.length)
-    return array[RandomIndex];
-}
 
 
 gameApp.init();
