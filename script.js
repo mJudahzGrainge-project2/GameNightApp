@@ -50,6 +50,10 @@ gameApp.displayGames = (gameArray) => {
     gameDescription.innerHTML = `${selectedGame.description}`
 };
 
-
+const button = document.querySelector('button');
+button.addEventListener('click', function(displayGames) {
+console.log(displayGames);
+});
+ 
 
 gameApp.init();
