@@ -50,10 +50,17 @@ gameApp.displayGames = (gameArray) => {
     gameDescription.innerHTML = `${selectedGame.description}`
 };
 
+function refreshPage ()
+
 const button = document.querySelector('button');
 button.addEventListener('click', function(displayGames) {
 console.log(displayGames);
+
+function refreshPage(){
+    window.location.reload();
+}
 });
- 
+
+
 
 gameApp.init();
