@@ -11,6 +11,7 @@ gameApp.getGame = () => {
     const atlasUrl = new URL(gameApp.endPoint)
 
     atlasUrl.search = new URLSearchParams({
+        limit: 100,
         client_id: gameApp.clientId
     })
     fetch(atlasUrl)
