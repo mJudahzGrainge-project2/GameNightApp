@@ -32,24 +32,33 @@ const getRandomItem = (array) => {
 }
 gameApp.displayGames = (gameArray) => {
     const playerFilter = gameArray.filter(function (games) {
-        return games.max_players >= playerAmount && games.max_playtime <= timeLimit;
+        return games.max_players >= playerAmount && games.max_playtime <= timeLimit && games.type === "game";
     })
     const selectedGame = getRandomItem(playerFilter)
     console.log(selectedGame.name)
 
 
-    const testDiv = document.querySelector('.test')
-    const gameName = document.createElement('h4')
+    const gameDisplay = document.querySelector('.gameDisplay');
+    const gameImage = document.querySelector('.gameImage');
+    const gameInfo = document.querySelector('.gameInfo');
+    const gameName = document.createElement('h2')
     const gameImg = document.createElement('img')
     const gameDescription = document.createElement('p')
-    testDiv.append(gameName)
-    testDiv.append(gameImg)
-    testDiv.append(gameDescription)
+    gameDisplay.append(gameName)
+    gameImage.append(gameImg)
+    gameInfo.append(gameDescription)
     gameName.innerHTML = `${selectedGame.name}`;
     gameImg.setAttribute('src', selectedGame.image_url)
     gameDescription.innerHTML = `${selectedGame.description}`
-};
 
+
+};
+const form = document.querySelector('form')
+form.addEventListener('submit', (e) => {
+    location.reload();
+
+
+})
 
 
 gameApp.init();
