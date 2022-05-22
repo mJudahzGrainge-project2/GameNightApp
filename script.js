@@ -61,6 +61,9 @@ function refreshPage(){
 }
 });
 
+/* ********** RANDOMIZER BUTTON ********** */
+
+
 
 
 gameApp.init();
