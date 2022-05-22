@@ -11,44 +11,62 @@
 
 
 <body>
-    <h1>The Game Night App!</h1>
-    <h2>Your Go-To search engine for discovering new board games</h2>
+    <header class="wrapper">
+        <h1>The Game Night App!</h1>
+        <h2>Your Go-To search engine for discovering your next favorite board game!!</h2>
+    </header>
 
 
-    <section>
-        <h3>Number of Players</h3>
-        <select name="players">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10+</option>
-        </select>
-    </section>
-
-
-        <section>
+    <form class="gameFilter wrapper">
+        <div class="playerAmout">
+            <h3>Number of Players</h3>
+            <label for="players" class="sr-only">Number of Players:</label>
+            <select id="players" name="players">
+                <option value=".">player Amount</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10+</option>
+            </select>
+        </div>
+        <div class="timeAmount">
             <h3>Maximum Amount of Time</h3>
-            <select name="time">
+            <label for="time" class="sr-only">Maximum Amount of Time:</label>
+            <select id="time" name="time">
+                <option value=".">Select game time</option>
                 <option value="15">15 Minutes</option>
                 <option value="30">30 Minutes</option>
                 <option value="60">1 Hour</option>
                 <option value="120">2 Hours</option>
                 <option value="180">3+ Hours</option>
             </select>
-        </section>
+        </div>
 
         <button class="submit">Submit</button>
 
-    <div class="randomizerButton">
-        <button type="randomizer">Generate Random Game</button>
-    </div>
+        <div class="randomizerButton">
+            <button type="randomizer">Generate Random Game</button>
+        </div>
+        <section class="gameDisplay wrapper">
 
+        </section>
+        <div class="gamebox">
+            <div class="gameImage">
+
+            </div>
+            <div class="gameInfo">
+                <h3>Game Description</h3>
+            </div>
+        </div>
+
+
+<<<<<<< HEAD
     <div class="searchBar">
         <form action="#">
             <label for="search">Search</label>
@@ -62,6 +80,10 @@
     </div>
 
     <footer>Copyright &copy 2022 Juno College</footer>
+=======
+    </form>
+    <footer class="wrapper">Copyright &copy 2022 Juno College</footer>
+>>>>>>> d672f604bc8bdabdc1cea87d7405e864441c3ccc
 
     <script src="./script.js"></script>
 </body>
