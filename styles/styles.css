@@ -250,6 +250,11 @@ html {
 
 html {
   font-size: 125%;
+  background-color: lightblue;
+}
+
+body {
+  height: 100vh;
 }
 
 .wrapper {
@@ -268,10 +273,141 @@ ul {
   list-style: none;
 }
 
+header {
+  border-bottom: 3px solid grey;
+}
+
 h1 {
   color: green;
   font-size: 4rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1rem;
+  color: teal;
+  text-align: center;
+}
+
+.gameFilter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5%;
+  border-bottom: 2px solid grey;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  padding-left: 10%;
+}
+.gameFilter h3 {
+  margin: 0;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: black;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid #eee;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  width: 100%;
+  text-transform: uppercase;
+  background-color: white;
+  background-image: url(../assets/caret-down-solid.svg);
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+
+button {
+  border: none;
+  background-color: white;
+  height: 50%;
+  padding: 20px 50px;
+  margin-top: auto;
+}
+
+.gameDisplay .wrapper {
+  margin: 5% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.gameImage {
+  border: 5px solid grey;
+  margin: 0 auto;
+  border-top-left-radius: 25px 80px;
+  border-top-right-radius: 20px 130px;
+  border-bottom-left-radius: 135px 19px;
+  border-bottom-right-radius: 135px 24px;
+  height: 500px;
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  -webkit-box-shadow: inset 0px 0px 40px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0px 0px 40px 30px rgba(0, 0, 0, 0.1);
+}
+.gameImage img {
+  padding: 20px;
+  margin: 0 auto;
+  height: 400px;
+  width: auto;
+  overflow: hidden;
+  -webkit-transform: translatey(0px);
+          transform: translatey(0px);
+  -webkit-animation: gameFloat 8s ease-in-out infinite;
+          animation: gameFloat 8s ease-in-out infinite;
+}
+
+.gameInfo {
+  width: 50%;
+  border: 5px solid blue;
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+@-webkit-keyframes gameFloat {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-15px);
+            transform: translatey(-15px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes gameFloat {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-15px);
+            transform: translatey(-15px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
 }
