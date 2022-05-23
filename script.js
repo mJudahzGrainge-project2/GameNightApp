@@ -49,8 +49,6 @@ gameApp.displayGames = (gameArray) => {
     const gameName = document.createElement('h2')
     const gameImg = document.createElement('img')
     const gameDescription = document.createElement('p')
-    const gamePlayerAmount = document.createElement('p');
-    const gamePlayTime = document.createElement('p');
     const gameFaq = document.createElement('p');
     gameDisplay.prepend(gameName);
     gameImage.append(gameImg);
@@ -63,7 +61,6 @@ const form = document.querySelector('form')
 form.addEventListener('submit', (e) => {
     location.reload();
 })
-
 
 
 gameApp.init();
