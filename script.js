@@ -29,6 +29,7 @@ const timeLimit = document.querySelector('select[name=time]').value;
 
 const arraySkip = Math.floor(Math.random() * 1000);
 console.log(arraySkip)
+
 const getRandomItem = (array) => {
     const RandomIndex = Math.floor(Math.random() * array.length)
     return array[RandomIndex];
@@ -58,40 +59,9 @@ gameApp.displayGames = (gameArray) => {
     gameInfo.innerHTML = ` <h3> Game Description:</h3> ${selectedGame.description}`;
 };
 const form = document.querySelector('form')
+
 form.addEventListener('submit', (e) => {
     location.reload();
 })
-
-
-
-
-
-
-
-
-
-
-
-
-const test = document.querySelector('.test')
-const gameDescription = document.createElement('p')
-test.append(gameDescription);
-gameDescription.innerHTML = `${selectedGame.description}`;
-
-function refreshPage ()
-
-const button = document.querySelector('button');
-button.addEventListener('click', function(displayGames) {
-console.log(displayGames);
-
-function refreshPage(){
-    window.location.reload();
-}
-});
-
-/* ********** RANDOMIZER BUTTON ********** */
-
-
-
 
 gameApp.init();
