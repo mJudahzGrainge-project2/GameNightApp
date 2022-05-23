@@ -55,20 +55,13 @@ gameApp.displayGames = (gameArray) => {
     gameDisplay.prepend(gameName);
     gameImage.append(gameImg);
     gameInfo.append(gameDescription);
-    // gameInfo.append(gamePlayerAmount);
-    // gameInfo.append(gamePlayTime);
     gameName.innerHTML = `${selectedGame.name}`;
     gameImg.setAttribute('src', selectedGame.image_url);
     gameInfo.innerHTML = ` <h3> Game Description:</h3> ${selectedGame.description}`;
-    // gamePlayerAmount.innerHTML = `Players: ${selectedGame.min_players} - ${selectedGame.max_players} `;
-    // gamePlayTime.innerHTML = `Play Time: ${selectedGame.min_playtime} - ${selectedGame.max_playtime}Min `;
-
-
 };
 const form = document.querySelector('form')
 form.addEventListener('submit', (e) => {
     location.reload();
-
 })
 
 
