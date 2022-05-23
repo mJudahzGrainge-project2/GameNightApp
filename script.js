@@ -11,6 +11,7 @@ gameApp.getGame = () => {
     const atlasUrl = new URL(gameApp.endPoint)
 
     atlasUrl.search = new URLSearchParams({
+        skip: arraySkip,
         limit: 100,
         client_id: gameApp.clientId
     })
@@ -26,6 +27,8 @@ gameApp.getGame = () => {
 const playerAmount = document.querySelector('select[name=players]').value;
 const timeLimit = document.querySelector('select[name=time]').value;
 
+const arraySkip = Math.floor(Math.random() * 1000);
+console.log(arraySkip)
 const getRandomItem = (array) => {
     const RandomIndex = Math.floor(Math.random() * array.length)
     return array[RandomIndex];
@@ -44,19 +47,25 @@ gameApp.displayGames = (gameArray) => {
     const gameName = document.createElement('h2')
     const gameImg = document.createElement('img')
     const gameDescription = document.createElement('p')
-    gameDisplay.append(gameName)
-    gameImage.append(gameImg)
-    gameInfo.append(gameDescription)
+    const gamePlayerAmount = document.createElement('p');
+    const gamePlayTime = document.createElement('p');
+    const gameFaq = document.createElement('p');
+    gameDisplay.prepend(gameName);
+    gameImage.append(gameImg);
+    gameInfo.append(gameDescription);
+    // gameInfo.append(gamePlayerAmount);
+    // gameInfo.append(gamePlayTime);
     gameName.innerHTML = `${selectedGame.name}`;
-    gameImg.setAttribute('src', selectedGame.image_url)
-    gameDescription.innerHTML = `${selectedGame.description}`
+    gameImg.setAttribute('src', selectedGame.image_url);
+    gameInfo.innerHTML = ` <h3> Game Description:</h3> ${selectedGame.description}`;
+    // gamePlayerAmount.innerHTML = `Players: ${selectedGame.min_players} - ${selectedGame.max_players} `;
+    // gamePlayTime.innerHTML = `Play Time: ${selectedGame.min_playtime} - ${selectedGame.max_playtime}Min `;
 
 
 };
 const form = document.querySelector('form')
 form.addEventListener('submit', (e) => {
     location.reload();
-
 
 })
 
