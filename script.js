@@ -33,6 +33,8 @@ const getRandomItem = (array) => {
     const RandomIndex = Math.floor(Math.random() * array.length)
     return array[RandomIndex];
 }
+
+
 gameApp.displayGames = (gameArray) => {
     const playerFilter = gameArray.filter(function (games) {
         return games.max_players >= playerAmount && games.max_playtime <= timeLimit && games.type === "game";
@@ -47,61 +49,17 @@ gameApp.displayGames = (gameArray) => {
     const gameName = document.createElement('h2')
     const gameImg = document.createElement('img')
     const gameDescription = document.createElement('p')
-    const gamePlayerAmount = document.createElement('p');
-    const gamePlayTime = document.createElement('p');
     const gameFaq = document.createElement('p');
     gameDisplay.prepend(gameName);
     gameImage.append(gameImg);
     gameInfo.append(gameDescription);
-    // gameInfo.append(gamePlayerAmount);
-    // gameInfo.append(gamePlayTime);
     gameName.innerHTML = `${selectedGame.name}`;
     gameImg.setAttribute('src', selectedGame.image_url);
     gameInfo.innerHTML = ` <h3> Game Description:</h3> ${selectedGame.description}`;
-    // gamePlayerAmount.innerHTML = `Players: ${selectedGame.min_players} - ${selectedGame.max_players} `;
-    // gamePlayTime.innerHTML = `Play Time: ${selectedGame.min_playtime} - ${selectedGame.max_playtime}Min `;
-
-
 };
 const form = document.querySelector('form')
 form.addEventListener('submit', (e) => {
     location.reload();
-
 })
-
-
-
-
-
-
-
-
-
-
-
-
-const test = document.querySelector('.test')
-const gameDescription = document.createElement('p')
-test.append(gameDescription);
-gameDescription.innerHTML = `${selectedGame.description}`;
-
-function refreshPage ()
-
-const button = document.querySelector('button');
-button.addEventListener('click', function(displayGames) {
-console.log(displayGames);
-
-function refreshPage(){
-    window.location.reload();
-}
-});
-
-/* ********** RANDOMIZER BUTTON ********** */
-
-gameApp.getRandomArrayItem = (someArray) => {
-    const randomIndex = Math.floor(Math.random() * someArray.length);
-    return someArray[randomIndex];
-}
-
 
 gameApp.init();
