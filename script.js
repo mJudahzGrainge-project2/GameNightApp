@@ -63,7 +63,10 @@ function refreshPage(){
 
 /* ********** RANDOMIZER BUTTON ********** */
 
-
+gameApp.getRandomArrayItem = (someArray) => {
+    const randomIndex = Math.floor(Math.random() * someArray.length);
+    return someArray[randomIndex];
+}
 
 
 gameApp.init();
