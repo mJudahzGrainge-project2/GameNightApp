@@ -33,6 +33,8 @@ const getRandomItem = (array) => {
     const RandomIndex = Math.floor(Math.random() * array.length)
     return array[RandomIndex];
 }
+
+
 gameApp.displayGames = (gameArray) => {
     const playerFilter = gameArray.filter(function (games) {
         return games.max_players >= playerAmount && games.max_playtime <= timeLimit && games.type === "game";
@@ -68,6 +70,7 @@ form.addEventListener('submit', (e) => {
     location.reload();
 
 })
+
 
 
 gameApp.init();
