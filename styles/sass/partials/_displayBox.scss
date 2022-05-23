@@ -2,6 +2,7 @@
 .gameDisplay .wrapper{
     margin: 5% auto;
     display: flex;
+    flex-direction: column;
     flex-basis: 50%;
     
 }
@@ -25,14 +26,14 @@
         height: 400px;
         width: auto;
         overflow: hidden;
-        transform: translatey(0px);
-            animation: gameFloat 8s ease-in-out infinite;
+        animation: gameFloat 8s ease-in-out infinite;
     }
 }
 
 .gameInfo{
-    width: 50%;
-    border: 5px solid blue;
+    width: 100%;
+    // border: 5px solid blue;
+    margin: 0 auto;
     // background-color: white;
 }
 
@@ -44,12 +45,10 @@ footer{
 @keyframes gameFloat{
     0% {
 		transform: translatey(0px);
-	}
-    
+	}  
 	50% {
-		transform: translatey(-15px);
+		transform: translatey(-20px);
 	}
-   
 	100% {
 		
 		transform: translatey(0px);
