@@ -85,6 +85,20 @@ const gameDescription = document.createElement('p')
 test.append(gameDescription);
 gameDescription.innerHTML = `${selectedGame.description}`;
 
+function refreshPage ()
+
+const button = document.querySelector('button');
+button.addEventListener('click', function(displayGames) {
+console.log(displayGames);
+
+function refreshPage(){
+    window.location.reload();
+}
+});
+
+/* ********** RANDOMIZER BUTTON ********** */
+
+
 
 
 gameApp.init();
