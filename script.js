@@ -70,4 +70,21 @@ form.addEventListener('submit', (e) => {
 })
 
 
+
+
+
+
+
+
+
+
+
+
+const test = document.querySelector('.test')
+const gameDescription = document.createElement('p')
+test.append(gameDescription);
+gameDescription.innerHTML = `${selectedGame.description}`;
+
+
+
 gameApp.init();
