@@ -62,8 +62,4 @@ form.addEventListener('submit', (e) => {
     location.reload();
 })
 
-
-
-
-
 gameApp.init();
