@@ -10,11 +10,11 @@
     border: 5px solid grey;
     margin: 0 auto;
     border-top-left-radius: 25px 80px;
-    border-top-right-radius: 20px 130px;
-    border-bottom-left-radius: 135px 19px;
-    border-bottom-right-radius: 135px 24px;
+    border-top-right-radius: 25px 80px;
+    border-bottom-left-radius: 130px 25px;
+    border-bottom-right-radius: 130px 25px;
     height: 500px;
-    width: 500px;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,10 +23,10 @@
     img{
         padding: 20px;
         margin: 0 auto;
-        height: 400px;
+        height: 80%;
         width: auto;
         overflow: hidden;
-        animation: gameFloat 8s ease-in-out infinite;
+        animation: gameHover 8s ease-in-out infinite;
     }
 }
 
@@ -42,7 +42,7 @@ footer{
     text-align: center;
 }
 
-@keyframes gameFloat{
+@keyframes gameHover{
     0% {
 		transform: translatey(0px);
 	}  
