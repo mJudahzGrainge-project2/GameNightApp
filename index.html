@@ -22,7 +22,7 @@
             <h3>Number of Players</h3>
             <label for="players" class="sr-only">Number of Players:</label>
             <select id="players" name="players">
-                <option value=".">player Amount</option>
+                <option value="">player Amount</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -39,7 +39,7 @@
             <h3>Maximum Amount of Time</h3>
             <label for="time" class="sr-only">Maximum Amount of Time:</label>
             <select id="time" name="time">
-                <option value=".">Select game time</option>
+                <option value="">Select game time</option>
                 <option value="15">15 Minutes</option>
                 <option value="30">30 Minutes</option>
                 <option value="60">1 Hour</option>
@@ -54,12 +54,12 @@
 
     </form>
     <section class="gameDisplay wrapper ">
-
+        <h2 class="gameName"></h2>
         <div class="gamebox wrapper">
-            <div class="gameImage">
+            <div class="gameImage" id="gameImage">
+                <img src="./assets/inkpx-word-art.png" alt="" class="gamePackaging" id="gamePackaging">
             </div>
             <div class="gameInfo">
-
             </div>
         </div>
     </section>
@@ -68,4 +68,5 @@
 
     <script src="./script.js"></script>
 </body>
+
 </html>

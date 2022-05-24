@@ -296,8 +296,7 @@ h2 {
   gap: 5%;
   border-bottom: 2px solid grey;
   margin: 0 auto;
-  padding-bottom: 20px;
-  padding-left: 10%;
+  padding: 0 auto;
 }
 .gameFilter h3 {
   margin: 0;
@@ -346,11 +345,11 @@ button {
   border: 5px solid grey;
   margin: 0 auto;
   border-top-left-radius: 25px 80px;
-  border-top-right-radius: 20px 130px;
-  border-bottom-left-radius: 135px 19px;
-  border-bottom-right-radius: 135px 24px;
+  border-top-right-radius: 25px 80px;
+  border-bottom-left-radius: 130px 25px;
+  border-bottom-right-radius: 130px 25px;
   height: 500px;
-  width: 500px;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,11 +366,11 @@ button {
 .gameImage img {
   padding: 20px;
   margin: 0 auto;
-  height: 400px;
+  height: 80%;
   width: auto;
   overflow: hidden;
-  -webkit-animation: gameFloat 8s ease-in-out infinite;
-          animation: gameFloat 8s ease-in-out infinite;
+  -webkit-animation: gameHover 8s ease-in-out infinite;
+          animation: gameHover 8s ease-in-out infinite;
 }
 
 .gameInfo {
@@ -384,7 +383,7 @@ footer {
   text-align: center;
 }
 
-@-webkit-keyframes gameFloat {
+@-webkit-keyframes gameHover {
   0% {
     -webkit-transform: translatey(0px);
             transform: translatey(0px);
@@ -399,7 +398,7 @@ footer {
   }
 }
 
-@keyframes gameFloat {
+@keyframes gameHover {
   0% {
     -webkit-transform: translatey(0px);
             transform: translatey(0px);
