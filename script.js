@@ -59,6 +59,7 @@ gameApp.displayGames = (gameArray) => {
     gameInfo.innerHTML = ` <h3> Game Description:</h3> ${selectedGame.description}`;
 };
 
+
 gameApp.giveResult = () => {
     const form = document.querySelector('form')
     form.addEventListener('submit', (e) => {
@@ -74,5 +75,4 @@ gameApp.init();
 
 
 
-// const playerFilter = gameArray.filter(function (games) {
-//     return games.max_players >= playerAmount && games.max_playtime <= timeLimit && games.type === "game";
+
