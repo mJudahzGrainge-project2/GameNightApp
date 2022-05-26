@@ -250,7 +250,7 @@ html {
 
 html {
   font-size: 125%;
-  background-color: lightblue;
+  background-color: #d1e5f4;
 }
 
 body {
@@ -278,19 +278,78 @@ header {
 }
 
 h1 {
-  color: green;
   font-size: 4rem;
+  font-family: "Atomic Age", cursive;
+  color: #FF5348;
   text-align: center;
 }
 
 h2 {
-  font-size: 1rem;
-  color: teal;
+  font-size: 1.8rem;
+  color: #ff8b00;
   text-align: center;
+  font-family: "Life Savers", cursive;
 }
 
 .popup {
+  background-color: antiquewhite;
   display: none;
+  width: 450px;
+  padding: 40px 40px;
+  position: fixed;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border: 1px solid rebeccapurple;
+  border-radius: 5%;
+  z-index: 90;
+}
+.popup h2 {
+  Text-align: center;
+  padding: 5%;
+  margin-bottom: 0;
+  font-size: 2.5rem;
+}
+.popup p {
+  text-align: justify;
+  margin-bottom: 5%;
+}
+.popup a {
+  display: block;
+  width: 100px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5px 25px;
+  text-transform: capitalize;
+  color: #FFF;
+  background-color: lightblue;
+}
+
+a:hover,
+a:focus {
+  color: antiquewhite;
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+  background-color: teal;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  pointer-events: all;
+  opacity: 1;
 }
 
 .gameFilter {

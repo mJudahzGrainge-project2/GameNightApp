@@ -4,6 +4,7 @@
     border-bottom: 2px solid grey;
     margin: 0 auto;
     padding: 0 auto;
+    
     h3{
         margin: 0;
     }
@@ -29,8 +30,9 @@
     button{
         // display: block;
         border: none;
-        background-color: white;
+        background-color: antiquewhite;
         height: 50%;
         padding:20px 50px;
         margin-top: auto;
+        border-radius: 5%;
     }

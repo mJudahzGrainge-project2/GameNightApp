@@ -1,3 +1,67 @@
 .popup {
+    background-color: antiquewhite;
     display: none;
+    width: 450px;
+    padding: 40px 40px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    transition: 200ms ease-in-out;
+    left: 50%;
+    top: 50%;
+    border: 3px solid grey;
+    border-radius: 5%;
+    z-index: 90;
+
+    h1 {
+        Text-align: center;
+        padding: 5%;
+        margin-bottom: 0;
+        font-size: 0.5rem;
+        font-family: $alphaFont;
+    }
+
+    p {
+        text-align: justify;
+        margin-bottom: 5%;
+        font-family: $betaFont;
+    }
+
+
+    a {
+        display: block;
+        width: 100px;
+        position: relative;
+        text-decoration: none;
+        text-align: center;
+        margin: 0 auto;
+        padding: 5px 25px;
+        text-transform: capitalize;
+        color: #FFF;
+        background-color: lightblue;
+
+    }
+    }
+
+    a:hover,
+    a:focus {
+    color: antiquewhite;
+    transition: 0.4s ease-in;
+    background-color: teal;
+    }
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    pointer-events: all;
+    opacity: 1;
 }

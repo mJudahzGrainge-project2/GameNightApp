@@ -4,13 +4,15 @@ header{
     
 }
 h1 {
-    color: green;
     font-size: 4rem;
+    font-family: $alphaFont;
+    color: #FF5348;
     text-align: center;
 }
 h2{
-    font-size: 1rem;
-    color: teal;
+    font-size: 1.8rem;
+    color: #ff8b00;
     text-align: center;
-
+    font-family: $betaFont;
 }
+
