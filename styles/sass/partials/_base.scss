@@ -24,6 +24,21 @@ ul{
   list-style: none;
 }
 
+.gameName {
+  font-family: $alphaFont;
+  font-weight:300;
+  color: #ff8b00;
+}
+
+.gameInfo {
+  font-family: $betaFont;
+  font-weight:800;
+  /* color:#FF5348; */
+  /* color: #ff8b00; */
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
+
 footer {
   padding-bottom: 20px;
   font-family: $alphaFont;

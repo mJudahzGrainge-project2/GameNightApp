@@ -1,0 +1,39 @@
+/* 1050 */
+@media (max-width: 1050px) {
+    .gameImage {
+        width: 70%;
+    }
+}
+
+/* 850 */
+@media (max-width: 850px) {
+    .gameImage {
+        width: 80%;
+    }
+}
+
+
+/* 666px */
+@media (max-width: 666px) {
+    .gameFilter {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+        
+        h3 {
+            padding-top: 10px;
+        }
+    }
+
+    button {
+        margin-top: 10px;
+    }
+
+    .gameImage {
+        width: 90%;
+        /* background: none;
+        border: none;
+        box-shadow: none; */
+    }
+}

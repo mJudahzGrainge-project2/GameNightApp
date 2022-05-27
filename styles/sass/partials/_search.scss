@@ -3,7 +3,7 @@
     gap: 5%;
     border-bottom: 2px solid grey;
     margin: 0 auto;
-    padding: 20 auto;
+    padding: 20px;
     justify-content: center;
     
     h3{
@@ -22,6 +22,7 @@
         border-radius: 5px;
         font-family: $betaFont;
         font-size: 0.7rem;
+        letter-spacing: 1px;
         width: 100%;
         text-transform: uppercase;
         background-color: rgb(255, 255, 255);
