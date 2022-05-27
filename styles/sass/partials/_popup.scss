@@ -1,5 +1,5 @@
 .popup {
-    background-color: antiquewhite;
+    background-color: #FAEBD7;
     display: none;
     width: 450px;
     padding: 40px 40px;
@@ -8,7 +8,7 @@
     transition: 200ms ease-in-out;
     left: 50%;
     top: 50%;
-    border: 3px solid grey;
+    border: 5px solid grey;
     border-radius: 5%;
     z-index: 90;
 
@@ -16,14 +16,18 @@
         Text-align: center;
         padding: 5%;
         margin-bottom: 0;
-        font-size: 0.5rem;
+        font-size: 3rem;
         font-family: $alphaFont;
     }
 
     p {
+        font-size: 1rem;
         text-align: justify;
         margin-bottom: 5%;
+        color: #ff8b00;
         font-family: $betaFont;
+        font-weight: 700;
+        padding-bottom: 15px;
     }
 
 
@@ -35,18 +39,20 @@
         text-align: center;
         margin: 0 auto;
         padding: 5px 25px;
-        text-transform: capitalize;
-        color: #FFF;
-        background-color: lightblue;
-
+        font-family: $alphaFont;
+        color: #FAEBD7;
+        background-color: #FF5348;
+        border-radius: 7%;
     }
+
     }
 
     a:hover,
     a:focus {
-    color: antiquewhite;
-    transition: 0.4s ease-in;
+    color: #FAEBD7;
     background-color: teal;
+    transition: background-color 0.4s ease-in;
+    
     }
 
 #overlay {
