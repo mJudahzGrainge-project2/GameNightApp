@@ -283,8 +283,6 @@ ul {
 .gameInfo {
   font-family: "Life Savers", cursive;
   font-weight: 800;
-  /* color:#FF5348; */
-  /* color: #ff8b00; */
   letter-spacing: 1px;
   line-height: 2rem;
 }
@@ -391,6 +389,7 @@ select {
           appearance: none;
   color: black;
   padding: 10px 0;
+  padding-left: 10px;
   border: none;
   border-bottom: 1px solid #eee;
   border-radius: 5px;
@@ -405,6 +404,10 @@ select {
   background-position: 95% center;
 }
 
+select:hover {
+  cursor: pointer;
+}
+
 button {
   border: none;
   color: antiquewhite;
@@ -414,13 +417,14 @@ button {
   margin-top: auto;
   border-radius: 7%;
   font-family: "Atomic Age", cursive;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
 }
 
 .submit:hover,
 .submit:focus {
+  cursor: pointer;
   background-color: teal;
-  -webkit-transition: ease-in-out 0.4s;
-  transition: ease-in-out 0.4s;
   color: antiquewhite;
 }
 
@@ -543,8 +547,5 @@ footer {
 
   .gameImage {
     width: 90%;
-    /* background: none;
-    border: none;
-    box-shadow: none; */
   }
 }

@@ -37,14 +37,14 @@ const getRandomItem = (array) => {
 }
 
 
-function openPopup(){
+function openPopup() {
     document.querySelector(".popup").style.display = "block";
-        }
+}
 
 
 const closeButton = document.querySelector('#okayButton');
 
-closeButton.addEventListener("click", function(e) {
+closeButton.addEventListener("click", function (e) {
     e.preventDefault();
     document.querySelector(".popup").style.display = "none";
 });
@@ -55,18 +55,18 @@ gameApp.displayGames = (gameArray) => {
     const playerAmount = document.querySelector('select[name=players]').value;
     const timeLimit = document.querySelector('select[name=time]').value;
 
-    if (playerAmount === '' || timeLimit === '') {  
+    if (playerAmount === '' || timeLimit === '') {
         return openPopup()
     } else {
-        
+
         console.log(playerAmount, timeLimit)
         const playerFilter = gameArray.filter(function (games) {
             return games.max_players >= playerAmount && games.max_playtime <= timeLimit && games.type === "game";
         })
         console.log(playerFilter);
         const selectedGame = getRandomItem(playerFilter)
-        
-        
+
+
         const gameDisplay = document.querySelector('.gameDisplay');
         const gameImage = document.querySelector('.gameImage');
         const gameInfo = document.querySelector('.gameInfo');
@@ -77,13 +77,12 @@ gameApp.displayGames = (gameArray) => {
         gamePackaging.setAttribute('src', selectedGame.image_url);
         gameInfo.innerHTML = ` <h3> Game Description:</h3> ${selectedGame.description}`;
     }
-    };
-    
+};
+
 
 gameApp.giveResult = () => {
     const form = document.querySelector('form')
     form.addEventListener('submit', (e) => {
-        // location.reload();
         e.preventDefault()
         gameApp.getGame()
     })

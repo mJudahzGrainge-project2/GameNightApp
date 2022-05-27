@@ -14,9 +14,9 @@
 }
     select{
         appearance: none;
-        // display: block;
         color: black;
         padding: 10px 0 ;
+        padding-left: 10px;
         border: none;
         border-bottom: 1px solid #eee;
         border-radius: 5px;
@@ -29,11 +29,12 @@
         background-image: url(../assets/caret-down-solid.svg);
         background-repeat: no-repeat;
         background-position: 95% center;
-        // background-size: 20px;
+    }
+    select:hover{
+        cursor: pointer;
     }
     
     button{
-        // display: block;
         border: none;
         color: antiquewhite;
         background-color: #FF5348;
@@ -42,12 +43,13 @@
         margin-top: auto;
         border-radius: 7%;
         font-family: $alphaFont;
+        transition: ease-in-out 0.2s;
 
         
     }
     .submit:hover,
     .submit:focus {
+        cursor: pointer;
         background-color: teal;
-        transition: ease-in-out 0.4s;
         color: antiquewhite;
     }
