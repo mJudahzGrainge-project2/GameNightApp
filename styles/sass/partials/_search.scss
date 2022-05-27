@@ -3,9 +3,13 @@
     gap: 5%;
     border-bottom: 2px solid grey;
     margin: 0 auto;
-    padding: 0 auto;
+    padding: 20px;
+    justify-content: center;
+    
     h3{
         margin: 0;
+        font-family: $alphaFont;
+        color:#FF5348;
     }
 }
     select{
@@ -16,10 +20,12 @@
         border: none;
         border-bottom: 1px solid #eee;
         border-radius: 5px;
+        font-family: $betaFont;
         font-size: 0.7rem;
+        letter-spacing: 1px;
         width: 100%;
         text-transform: uppercase;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         background-image: url(../assets/caret-down-solid.svg);
         background-repeat: no-repeat;
         background-position: 95% center;
@@ -29,8 +35,19 @@
     button{
         // display: block;
         border: none;
-        background-color: white;
+        color: antiquewhite;
+        background-color: #FF5348;
         height: 50%;
         padding:20px 50px;
         margin-top: auto;
+        border-radius: 7%;
+        font-family: $alphaFont;
+
+        
+    }
+    .submit:hover,
+    .submit:focus {
+        background-color: teal;
+        transition: ease-in-out 0.4s;
+        color: antiquewhite;
     }

@@ -1,6 +1,11 @@
+/* Fonts */
+$alphaFont: 'Atomic Age', cursive;
+$betaFont: 'Life Savers', cursive;
+
 @import "./partials/setup";
 @import "./partials/base";
 @import "./partials/header";
+@import "./partials/popup";
 @import "./partials/search";
 @import "./partials/displayBox";
 @import "./partials/media";

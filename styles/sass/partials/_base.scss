@@ -1,21 +1,46 @@
 
 html{
   font-size: 125%;
-  background-color: lightblue;
+  background-color: #d1e5f4;
 }
+
 body{
   height: 100vh;
 }
+
 .wrapper{
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
 }
+
 img{
   max-width: 100%;
   display: block;
 }
+
 ul{
   text-decoration: none;
   list-style: none;
+}
+
+.gameName {
+  font-family: $alphaFont;
+  font-weight:300;
+  color: #ff8b00;
+}
+
+.gameInfo {
+  font-family: $betaFont;
+  font-weight:800;
+  /* color:#FF5348; */
+  /* color: #ff8b00; */
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
+
+footer {
+  padding-bottom: 20px;
+  font-family: $alphaFont;
+  color: grey;
 }

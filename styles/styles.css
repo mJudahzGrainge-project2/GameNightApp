@@ -1,3 +1,4 @@
+/* Fonts */
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -250,7 +251,7 @@ html {
 
 html {
   font-size: 125%;
-  background-color: lightblue;
+  background-color: #d1e5f4;
 }
 
 body {
@@ -273,20 +274,97 @@ ul {
   list-style: none;
 }
 
+.gameName {
+  font-family: "Atomic Age", cursive;
+  font-weight: 300;
+  color: #ff8b00;
+}
+
+.gameInfo {
+  font-family: "Life Savers", cursive;
+  font-weight: 800;
+  /* color:#FF5348; */
+  /* color: #ff8b00; */
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
+
+footer {
+  padding-bottom: 20px;
+  font-family: "Atomic Age", cursive;
+  color: grey;
+}
+
 header {
   border-bottom: 3px solid grey;
 }
 
 h1 {
-  color: green;
   font-size: 4rem;
+  font-family: "Atomic Age", cursive;
+  color: #FF5348;
   text-align: center;
 }
 
 h2 {
-  font-size: 1rem;
-  color: teal;
+  font-size: 1.8rem;
+  color: #ff8b00;
   text-align: center;
+  font-family: "Life Savers", cursive;
+}
+
+.popup {
+  background-color: #FAEBD7;
+  display: none;
+  width: 450px;
+  padding: 40px 40px;
+  position: fixed;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  left: 50%;
+  top: 50%;
+  border: 5px solid grey;
+  border-radius: 5%;
+  z-index: 90;
+}
+.popup h1 {
+  Text-align: center;
+  padding: 5%;
+  margin-bottom: 0;
+  font-size: 3rem;
+  font-family: "Atomic Age", cursive;
+}
+.popup p {
+  font-size: 1rem;
+  text-align: justify;
+  margin-bottom: 5%;
+  color: #ff8b00;
+  font-family: "Life Savers", cursive;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+.popup a {
+  display: block;
+  width: 100px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5px 25px;
+  font-family: "Atomic Age", cursive;
+  color: #FAEBD7;
+  background-color: #FF5348;
+  border-radius: 7%;
+}
+
+a:hover,
+a:focus {
+  color: #FAEBD7;
+  background-color: teal;
+  -webkit-transition: background-color 0.4s ease-in;
+  transition: background-color 0.4s ease-in;
 }
 
 .gameFilter {
@@ -296,10 +374,15 @@ h2 {
   gap: 5%;
   border-bottom: 2px solid grey;
   margin: 0 auto;
-  padding: 0 auto;
+  padding: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .gameFilter h3 {
   margin: 0;
+  font-family: "Atomic Age", cursive;
+  color: #FF5348;
 }
 
 select {
@@ -311,10 +394,12 @@ select {
   border: none;
   border-bottom: 1px solid #eee;
   border-radius: 5px;
+  font-family: "Life Savers", cursive;
   font-size: 0.7rem;
+  letter-spacing: 1px;
   width: 100%;
   text-transform: uppercase;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   background-image: url(../assets/caret-down-solid.svg);
   background-repeat: no-repeat;
   background-position: 95% center;
@@ -322,10 +407,21 @@ select {
 
 button {
   border: none;
-  background-color: white;
+  color: antiquewhite;
+  background-color: #FF5348;
   height: 50%;
   padding: 20px 50px;
   margin-top: auto;
+  border-radius: 7%;
+  font-family: "Atomic Age", cursive;
+}
+
+.submit:hover,
+.submit:focus {
+  background-color: teal;
+  -webkit-transition: ease-in-out 0.4s;
+  transition: ease-in-out 0.4s;
+  color: antiquewhite;
 }
 
 .gameDisplay .wrapper {
@@ -410,5 +506,45 @@ footer {
   100% {
     -webkit-transform: translatey(0px);
             transform: translatey(0px);
+  }
+}
+/* 1050 */
+@media (max-width: 1050px) {
+  .gameImage {
+    width: 70%;
+  }
+}
+/* 850 */
+@media (max-width: 850px) {
+  .gameImage {
+    width: 80%;
+  }
+}
+/* 666px */
+@media (max-width: 666px) {
+  .gameFilter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 20px;
+  }
+  .gameFilter h3 {
+    padding-top: 10px;
+  }
+
+  button {
+    margin-top: 10px;
+  }
+
+  .gameImage {
+    width: 90%;
+    /* background: none;
+    border: none;
+    box-shadow: none; */
   }
 }

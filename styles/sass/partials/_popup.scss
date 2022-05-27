@@ -1,0 +1,55 @@
+.popup {
+    background-color: #FAEBD7;
+    display: none;
+    width: 450px;
+    padding: 40px 40px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    transition: 200ms ease-in-out;
+    left: 50%;
+    top: 50%;
+    border: 5px solid grey;
+    border-radius: 5%;
+    z-index: 90;
+
+    h1 {
+        Text-align: center;
+        padding: 5%;
+        margin-bottom: 0;
+        font-size: 3rem;
+        font-family: $alphaFont;
+    }
+
+    p {
+        font-size: 1rem;
+        text-align: justify;
+        margin-bottom: 5%;
+        color: #ff8b00;
+        font-family: $betaFont;
+        font-weight: 700;
+        padding-bottom: 15px;
+    }
+
+
+    a {
+        display: block;
+        width: 100px;
+        position: relative;
+        text-decoration: none;
+        text-align: center;
+        margin: 0 auto;
+        padding: 5px 25px;
+        font-family: $alphaFont;
+        color: #FAEBD7;
+        background-color: #FF5348;
+        border-radius: 7%;
+    }
+
+    }
+
+    a:hover,
+    a:focus {
+    color: #FAEBD7;
+    background-color: teal;
+    transition: background-color 0.4s ease-in;
+    }
