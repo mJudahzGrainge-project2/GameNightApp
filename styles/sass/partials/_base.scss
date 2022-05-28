@@ -6,6 +6,7 @@ html{
 
 body{
   height: 100vh;
+  position: relative;
 }
 
 .wrapper{
@@ -37,8 +38,32 @@ ul{
   line-height: 2rem;
 }
 
-footer {
-  padding-bottom: 20px;
+footer  {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
   font-family: $alphaFont;
   color: grey;
+  margin: 100px auto 20px auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a{
+    text-decoration: none;
+  }
 }
+
+i{
+  color:#FF5348;
+  text-decoration: none;
+  font-size: 2rem;
+  background-color: none;
+  }
+  .gitLink{
+    margin-right: 10px;
+  }
+
+  .contactName{
+    color: black;
+  }

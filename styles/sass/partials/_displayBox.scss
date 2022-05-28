@@ -6,11 +6,12 @@
     flex-basis: 50%;
 }
 .gameName{
-    font-size: 1.5rem;
-    margin: 10 auto;
+    font-size: 1.8rem;
+    margin-bottom: 0;
     font-family: $alphaFont;
     h3{
         margin-bottom: 0;
+        color: #FF5348;
     }
 }
 .gameImage{
@@ -20,7 +21,7 @@
     border-top-right-radius: 25px 80px;
     border-bottom-left-radius: 130px 25px;
     border-bottom-right-radius: 130px 25px;
-    height: 480px;
+    height: 450px;
     width: 50%;
     display: flex;
     justify-content: center;
@@ -42,10 +43,6 @@
     margin: 0 auto;
 }
 
-footer{
-    margin-top: 40px;
-    text-align: center;
-}
 
 @keyframes gameHover{
     0% {
@@ -59,3 +56,28 @@ footer{
 		transform: translatey(0px);
 	}
 }
+.buyButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buyNow{
+        border: none;
+        color: antiquewhite;
+        background-color: #FF5348;
+        height: 50%;
+        padding:20px 60px;
+        border-radius: 7%;
+        font-family: $alphaFont;
+        transition: ease-in-out 0.2s;
+        text-align: center;
+        text-decoration: none;
+
+        
+    }
+    .buyNow:hover,
+    .buyNow:focus {
+        cursor: pointer;
+        background-color: teal;
+        color: antiquewhite;
+    }

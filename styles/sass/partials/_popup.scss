@@ -31,7 +31,7 @@
     }
 
 
-    a {
+        a {
         display: block;
         width: 100px;
         position: relative;
@@ -44,11 +44,10 @@
         background-color: #FF5348;
         border-radius: 7%;
     }
-
     }
 
-    a:hover,
-    a:focus {
+    #okayButton:hover,
+    #okayButton:focus {
     color: #FAEBD7;
     background-color: teal;
     transition: background-color 0.4s ease-in;

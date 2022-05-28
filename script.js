@@ -76,9 +76,15 @@ gameApp.displayGames = (gameArray) => {
         gameName.innerHTML = `${selectedGame.name}`;
         gamePackaging.setAttribute('src', selectedGame.image_url);
         gameInfo.innerHTML = ` <h3> Game Description:</h3> ${selectedGame.description}`;
+        const buyNow = document.querySelector('.buyNow');
+
+        buyNow.addEventListener('click', (e) => {
+            // e.preventDefault()
+            buyNow.setAttribute('href', selectedGame.url);
+            buyNow.setAttribute('target', `_blank`);
+        })
     }
 };
-
 
 gameApp.giveResult = () => {
     const form = document.querySelector('form')

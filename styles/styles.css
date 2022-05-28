@@ -256,6 +256,7 @@ html {
 
 body {
   height: 100vh;
+  position: relative;
 }
 
 .wrapper {
@@ -288,9 +289,40 @@ ul {
 }
 
 footer {
-  padding-bottom: 20px;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
   font-family: "Atomic Age", cursive;
   color: grey;
+  margin: 100px auto 20px auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer a {
+  text-decoration: none;
+}
+
+i {
+  color: #FF5348;
+  text-decoration: none;
+  font-size: 2rem;
+  background-color: none;
+}
+
+.gitLink {
+  margin-right: 10px;
+}
+
+.contactName {
+  color: black;
 }
 
 header {
@@ -358,8 +390,8 @@ h2 {
   border-radius: 7%;
 }
 
-a:hover,
-a:focus {
+#okayButton:hover,
+#okayButton:focus {
   color: #FAEBD7;
   background-color: teal;
   -webkit-transition: background-color 0.4s ease-in;
@@ -443,12 +475,13 @@ button {
 }
 
 .gameName {
-  font-size: 1.5rem;
-  margin: 10 auto;
+  font-size: 1.8rem;
+  margin-bottom: 0;
   font-family: "Atomic Age", cursive;
 }
 .gameName h3 {
   margin-bottom: 0;
+  color: #FF5348;
 }
 
 .gameImage {
@@ -458,7 +491,7 @@ button {
   border-top-right-radius: 25px 80px;
   border-bottom-left-radius: 130px 25px;
   border-bottom-right-radius: 130px 25px;
-  height: 480px;
+  height: 450px;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -486,11 +519,6 @@ button {
 .gameInfo {
   width: 100%;
   margin: 0 auto;
-}
-
-footer {
-  margin-top: 40px;
-  text-align: center;
 }
 
 @-webkit-keyframes gameHover {
@@ -522,6 +550,39 @@ footer {
             transform: translatey(0px);
   }
 }
+.buyButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.buyNow {
+  border: none;
+  color: antiquewhite;
+  background-color: #FF5348;
+  height: 50%;
+  padding: 20px 60px;
+  border-radius: 7%;
+  font-family: "Atomic Age", cursive;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+  text-align: center;
+  text-decoration: none;
+}
+
+.buyNow:hover,
+.buyNow:focus {
+  cursor: pointer;
+  background-color: teal;
+  color: antiquewhite;
+}
+
 /* 1050 */
 @media (max-width: 1050px) {
   .gameImage {
@@ -557,5 +618,9 @@ footer {
 
   .gameImage {
     width: 90%;
+  }
+
+  i {
+    font-size: 1.5rem;
   }
 }
