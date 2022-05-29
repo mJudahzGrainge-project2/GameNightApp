@@ -44,7 +44,7 @@ footer  {
   margin: 0 auto;
   font-family: $alphaFont;
   color: grey;
-  margin: 100px auto 20px auto;
+  margin: 100px auto 50px auto;
   text-align: center;
   display: flex;
   justify-content: space-between;
@@ -63,7 +63,12 @@ i{
   .gitLink{
     margin-right: 10px;
   }
-
   .contactName{
     color: black;
+  }
+  .midianContact{
+    margin-right: 40px;
+  }
+  .zachContact{
+    margin-left: 40px;
   }

@@ -294,7 +294,7 @@ footer {
   margin: 0 auto;
   font-family: "Atomic Age", cursive;
   color: grey;
-  margin: 100px auto 20px auto;
+  margin: 100px auto 50px auto;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -323,6 +323,14 @@ i {
 
 .contactName {
   color: black;
+}
+
+.midianContact {
+  margin-right: 40px;
+}
+
+.zachContact {
+  margin-left: 40px;
 }
 
 header {
@@ -356,7 +364,7 @@ h2 {
   transition: 200ms ease-in-out;
   left: 50%;
   top: 50%;
-  border: 5px solid grey;
+  border: 5px solid #FF5348;
   border-radius: 5%;
   z-index: 90;
 }
